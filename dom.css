@@ -1,0 +1,97 @@
+:root {
+    --primary: #3a3a3a;
+    --secondary: #d2d2d2;
+}
+* {
+    box-sizing: border;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: 0;
+    font-family: Poppins, sans-serif;
+    list-style-type: none;
+}
+body {
+    background-color: #fff;
+    /* padding-bottom: 50px; */
+}
+@font-face {
+    font-family: Poppins;
+    src: url('/assets/fonts/Poppins/Poppins-Regular.ttf');
+}
+header {
+    /* background-color: #196d19; */
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input#search {
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 40%;
+}
+input#filter {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+input::placeholder{
+    color: #bcbcbc;
+}
+#button, #submit {
+    background-color: #222;
+    color: var(--secondary);
+    font-weight: 800;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+a {
+    background-color: #222;
+    color: var(--secondary);
+}
+li.list-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px 12px 15px;
+    border: 1px solid var(--secondary);
+    font-size: 0.9em;
+    color: var(--primary);
+}
+h2 {
+    padding: 15px 0;
+    color: white;
+    font-weight: 400;
+}
+header, main {
+    padding: 0px 50px;
+}
+.container {
+    margin-top: 10px;
+    border: 2px solid var(--secondary);
+    box-shadow: 1px 1px 9px -5px var(--primary);
+    padding: 10px;
+}
+.items {
+    margin-top: 10px;
+}
+button#button {
+    display: block;
+    width: 100%;
+    border-radius: 2px;
+    margin-top: 10px;
+    font-size: 13px;
+}
+button.delete {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: auto;
+    transition: 0.2s;
+}
+button.delete:hover {
+    opacity: 0.7;
+    transform: scale(80%);
+}
